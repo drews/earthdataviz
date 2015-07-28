@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body ng-app>
+    <div class="controls"><!-- ng-controller> -->
+	<label>Dataset: </label><span id="dataset-name">{{ ctrl.foo }}</span>
+
+	<input ng-model="datasetName" id="blue-marble" type="radio" value="2048"/> <label for="blue-marble">Blue Marble</label>
+        <br />
+	<input ng-model="datasetName" id="carbon" type="radio" value="2048-carbon"/> <label for="carbon">Carbon</label>
+        <input ng-model="frame" type="range" min=0 max=/>
+
+    </div>
+    
+    <div class="status" ng-show="frame_timestamp || frame">
+        <div ng-show="frame_timestamp">{{frame_timestamp}}</div>
+        <hr ng-show="frame_timestamp && frame"/>
+        <div ng-show="frame">( frame : {{ frame }} )</div>
+    </div>
+    <canvas id="raw"></canvas>
+    <canvas id="ortho"></canvas>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    background: black;
+    color: white;
+}
+
+img {
+    height: 512px;
+    width: auto;
+}
+canvas {
+    display: block;
+    border: 1px dotted white;
+    width: 500px;
+    margin: 0px auto;
+}
+
+.status {
+    padding: 5px;
+    text-align: center;
+    display: block;
+    width: 20%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #d9d9d9;
+    background: rgba(32,32,32,0.75);
+    border: 1px solid #4a4a4a;
+}
+
+.controls {
+    color: #d9d9d9;
+    background: rgba(32,32,32,0.75);
+    border: 1px solid #4a4a4a;
+    width: 20%;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+.controls input {
+    display: block;
+}
+
+

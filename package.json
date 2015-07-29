@@ -1,7 +1,7 @@
 {
   "name": "earthdataviz",
   "version": "1.0.0",
-  "description": "expore public datasets from different perspectives",
+  "description": "explore public datasets from different perspectives",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
